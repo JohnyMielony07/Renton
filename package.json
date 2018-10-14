@@ -1,0 +1,25 @@
+{
+  "name": "renton",
+  "version": "1.0.0",
+  "description": "Static site of cars renting company.",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnyMielony07/Renton.git"
+  },
+  "author": "Jan Latoch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnyMielony07/Renton/issues"
+  },
+  "homepage": "https://github.com/JohnyMielony07/Renton#readme"
+}
