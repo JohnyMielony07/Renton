@@ -1,2 +1,40 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0; }
+
 html {
   font-size: 62.5%; }
+
+body {
+  background-color: #eee; }
+
+.container {
+  background-color: #0E0D22;
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 0 0rem 3rem rgba(14, 13, 34, 0.65); }
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.navigation__item {
+  padding: 2rem;
+  color: #eee;
+  transition: all .2s; }
+  .navigation__item:hover {
+    color: #aaa;
+    transform: translateY(-0.2rem); }
+
+.navigation__link:link, .navigation__link:visited {
+  text-transform: uppercase;
+  color: inherit;
+  font-size: 1.5rem;
+  text-decoration: none; }
+
+.navigation__link:hover {
+  color: inherit; }

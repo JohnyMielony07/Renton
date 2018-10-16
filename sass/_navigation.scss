@@ -1,0 +1,39 @@
+.navigation {
+    
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    &__item {
+        padding: 2rem;
+        color: $color-light-grey-1;
+        transition: all .2s;
+
+        &:hover {
+            color: $color-light-grey-2;
+            transform: translateY(-.2rem);
+        }
+    }
+
+    &__link {
+
+
+        &:link,
+        &:visited {
+            text-transform: uppercase;
+            color: inherit;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: inherit;
+
+        }
+    }
+}
