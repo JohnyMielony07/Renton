@@ -16,6 +16,32 @@ body {
   margin: 0 auto;
   box-shadow: 0 0rem 3rem rgba(14, 13, 34, 0.65); }
 
+.header {
+  color: #eee;
+  background-color: #3D3C4A;
+  height: 20rem; }
+  .header__text-box {
+    padding-top: 3rem;
+    width: 50%;
+    height: 20rem;
+    margin-right: auto;
+    float: left; }
+  .header__desc {
+    padding: 2rem; }
+  .header__img-box {
+    background-image: url(../img/back-2-small.jpg);
+    width: 53%;
+    z-index: 2;
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    margin-left: auto;
+    z-index: 2; }
+
+.heading-primary {
+  text-align: center; }
+
 .navigation__list {
   list-style: none;
   display: flex;
@@ -38,3 +64,7 @@ body {
 
 .navigation__link:hover {
   color: inherit; }
+
+.heading-1 {
+  text-transform: uppercase;
+  letter-spacing: .8rem; }

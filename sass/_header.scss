@@ -1,0 +1,35 @@
+.header {
+    color: $color-light-grey-1;
+    background-color: $color-primary-1;
+    //
+    //display: flex;
+    height: 20rem;
+
+    &__text-box {
+        padding-top: 3rem;
+        width: 50%;
+        height: 20rem;
+        margin-right: auto;
+        float: left;
+    }
+
+    &__desc {
+        padding: 2rem;
+    }   
+
+    &__img-box {
+        background-image: url(../img/back-2-small.jpg);
+        width: 53%;
+        z-index: 2;
+        height: 20rem;
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+        margin-left: auto;
+        z-index: 2; 
+    }
+}
+
+.heading-primary {
+    text-align: center;
+}
