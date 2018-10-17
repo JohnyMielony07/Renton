@@ -14,7 +14,85 @@ body {
   background-color: #0E0D22;
   width: 70%;
   margin: 0 auto;
-  box-shadow: 0 0rem 3rem rgba(14, 13, 34, 0.65); }
+  box-shadow: 0 0rem 3rem rgba(14, 13, 34, 0.65);
+  margin-top: 2rem; }
+
+.cars {
+  margin: 2rem;
+  perspective: 150rem;
+  padding-bottom: 4rem; }
+  .cars__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    justify-items: center;
+    grid-row-gap: 2rem; }
+
+.card {
+  position: relative;
+  height: 16rem;
+  width: 15rem; }
+  .card__side {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: all .5s ease; }
+    .card__side--front {
+      border-radius: .1rem;
+      overflow: hidden;
+      background-color: #aaa;
+      height: 100%;
+      width: 100%; }
+    .card__side--back {
+      transform: rotateY(180deg);
+      background-color: #363E45;
+      height: 100%;
+      width: 100%; }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(360deg); }
+
+.car {
+  box-shadow: 0 0rem 3rem #0E0D22; }
+  .car__name {
+    color: #222;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: .8rem; }
+  .car__img {
+    width: 100%; }
+  .car__details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -.4rem; }
+    .car__details > * {
+      padding: .5rem; }
+
+.desc {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-45%);
+  color: #aaa;
+  width: 11rem;
+  line-height: 1.4rem; }
+  .desc__list {
+    list-style: none; }
+
+.btn-rent {
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  background-color: #1E272F;
+  color: #eee; }
 
 .header {
   color: #eee;
@@ -68,3 +146,12 @@ body {
 .heading-1 {
   text-transform: uppercase;
   letter-spacing: .8rem; }
+
+.heading-2 {
+  clear: both;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #eee;
+  letter-spacing: .4rem; }
