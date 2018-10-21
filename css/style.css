@@ -17,6 +17,32 @@ body {
   box-shadow: 0 0rem 3rem rgba(14, 13, 34, 0.65);
   margin-top: 2rem; }
 
+.jobs__content {
+  display: flex;
+  justify-content: space-between; }
+
+.jobs__list {
+  width: 40%;
+  margin: 0 2rem;
+  color: #ccc; }
+
+.jobs__item {
+  background-color: #050515;
+  padding: 1.5rem; }
+  .jobs__item:not(last-child) {
+    margin-bottom: 2rem; }
+
+.jobs__title {
+  margin-bottom: .5rem; }
+
+.jobs__desc {
+  width: 40%;
+  margin-right: 3.5rem;
+  color: #ccc;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  text-align: justify; }
+
 .cars {
   margin: 2rem;
   perspective: 150rem;
@@ -206,7 +232,8 @@ body {
 
 .heading-1 {
   text-transform: uppercase;
-  letter-spacing: .8rem; }
+  letter-spacing: .8rem;
+  text-align: center; }
 
 .heading-2 {
   clear: both;

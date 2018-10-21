@@ -1,0 +1,45 @@
+.careers {
+    
+}
+
+.jobs {
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        width: 40%;
+        margin: 0 2rem;
+        color: $color-light-grey-3;
+    }
+
+    &__item {
+        background-color: $color-primary-4;
+        padding: 1.5rem;
+
+        &:not(last-child) {
+            margin-bottom: 2rem;
+        }
+        
+    }
+
+    &__title {
+        margin-bottom: .5rem;
+    }
+
+    &__detail {
+        
+    }
+
+    &__desc {
+        width: 40%;
+        margin-right:  3.5rem;
+        color: $color-light-grey-3;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        text-align: justify;
+        
+    }
+}
