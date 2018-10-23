@@ -1,5 +1,5 @@
 .careers {
-    
+    margin-top: 3.5rem;
 }
 
 .jobs {
@@ -27,18 +27,19 @@
 
     &__title {
         margin-bottom: .5rem;
+        font-size: 2rem;
     }
 
     &__detail {
-        
+        font-size: 1.8rem;
     }
 
     &__desc {
         width: 40%;
         margin-right:  3.5rem;
         color: $color-light-grey-3;
-        font-size: 1.2rem;
-        line-height: 1.7rem;
+        font-size: 2.2rem;
+        line-height: 1.2;
         text-align: justify;
         
     }

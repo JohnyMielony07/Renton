@@ -1,5 +1,5 @@
 .contact {
-    height: 27rem;
+    height: 36.5rem;
     
     
     &__content {
@@ -19,13 +19,11 @@
         background-image: url(../img/back-1-small.jpg);
         width: 57%;
         z-index: 2;
-        height: 20rem;
+        height: 31rem;
         background-size: cover;
         background-position: bottom;
         clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
-      //  margin-right: auto;
         z-index: 2;
-        
     }
 }
 
@@ -34,7 +32,7 @@
     &__row {
 
         width: 90%;
-        margin-top: 2rem;
+        margin-top: 4rem;
         position: relative;
 
         &--name {
@@ -60,14 +58,15 @@
         display: block;
         position: absolute;
         color: $color-light-grey-2;
-        top: .4rem;
-        left: .4rem;
+        top: .6rem;
+        left: .6rem;
         transition: transform .4s;
+        font-size: 1.8rem;
 
         .form__input:focus + &,
         .form__input:valid + &
         {
-            transform: translateY(-1.8rem);
+            transform: translateY(-3.2rem);
         }
 
         &--name {
@@ -89,11 +88,12 @@
         background-color: $color-light-grey-1;
         width: 100%;
         border: 0;
+        height: 2.2rem;
         border-radius: .1rem;
         
-        padding: 0.4rem;
+        padding: 0.6rem;
         color: $color-font-grey-1;
-        font-size: 1rem;
+        font-size: 1.8rem;
 
         &--name {
 
@@ -119,12 +119,13 @@
 .submit-btn {
     
     background-color: $color-light-grey-2;
-    padding: .4rem;
+    padding: .6rem;
     margin-left: auto;
     display: block;
-    font-size: 1rem;
-    width: 5rem;
+    font-size: 2rem;
+    width: 8rem;
     border-radius: .1rem;
     border: 0;
     margin-right: -.7rem;
+    margin-top: -1rem;
 }
