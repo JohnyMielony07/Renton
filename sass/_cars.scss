@@ -6,9 +6,10 @@
     &__list {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
         justify-items: center; 
-        grid-row-gap: 2rem;
+        grid-row-gap: 3rem;
+        
     }
 
     
@@ -17,8 +18,8 @@
 .card {
 
     position: relative;
-    height: 18rem;
-    width: 15rem;
+    height: 29rem;
+    width: 24rem;
 
     &__side {
         position: absolute;
@@ -63,15 +64,16 @@
         color: #222;
         text-align: center;
         text-transform: uppercase;
-        font-size: 1.4rem;
+        font-size: 2.4rem;
         font-weight: 500;
         padding: .8rem;
+        height: 6.4rem;
         
     }
 
     &__img {
         
-        height: 10rem;
+        height: 17rem;
 
     }
 
@@ -79,25 +81,24 @@
         display: flex;
         justify-content: space-around;
         align-content: center;
+        font-size: 2rem;
+        padding: .4rem .2rem;
       
     }
 }
 
 .desc {
     position: absolute;
-    top: 15%;
+    top: 17%;
     left: 50%;
-    transform: translateX(-45%);
+    transform: translateX(-49%);
     color: $color-light-grey-2;
-    width: 11rem;
-    line-height: 1.8rem;
+    width: 21rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
 
     &__list {
         list-style: none;
-    }
-
-    &__item {
-
     }
 }
 
@@ -107,7 +108,8 @@
     position: absolute;
     bottom: 0;
     text-align: center;
-    padding: 1rem 0;
+    padding: .8rem 0;
+    font-size: 2.6rem;
     width: 100%;
 
     background-color: $color-secondary-2-2;
