@@ -23,6 +23,9 @@ $color-light-grey-3: #ccc;
 
 $color-font-grey-1: #777;
 
+$font-primary:'Tinos', serif;
+$font-display: 'Ubuntu', sans-serif;
+
 *,
 *::before,
 *::after {
@@ -38,6 +41,7 @@ html {
 body{
     //background-color: $color-secondary-1-1;
     background-color: $color-light-grey-1;
+    font-family: $font-primary;
 }
 
 .container {

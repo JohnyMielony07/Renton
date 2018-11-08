@@ -8,7 +8,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #eee; }
+  background-color: #eee;
+  font-family: "Tinos", serif; }
 
 .container {
   background-color: #0E0D22;
