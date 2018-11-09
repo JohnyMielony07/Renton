@@ -216,6 +216,13 @@ body {
     margin-right: auto;
     float: left;
     overflow: hidden; }
+    @media only screen and (max-width: 37.5em) {
+      .header__text-box {
+        width: 100%;
+        background-image: linear-gradient(rgba(61, 60, 74, 0.93), rgba(61, 60, 74, 0.93)), url(../img/back-2-small.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 2rem; } }
   .header__desc {
     padding: 2rem;
     margin-bottom: 1.5rem;
@@ -231,6 +238,9 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
     margin-left: auto;
     z-index: 2; }
+    @media only screen and (max-width: 37.5em) {
+      .header__img-box {
+        display: none; } }
 
 .heading-primary {
   text-align: center; }

@@ -1,8 +1,6 @@
 .header {
     color: $color-light-grey-1;
     background-color: $color-primary-1;
-    //
-    //display: flex;
     height: 30rem;
 
     &__text-box {
@@ -12,7 +10,16 @@
         margin-right: auto;
         float: left;
         overflow: hidden;
-        
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+            background-image: linear-gradient(rgba($color-primary-1, .93), 
+                                rgba($color-primary-1, .93)), 
+                                url(../img/back-2-small.jpg);
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 2rem;
+        }
     }
 
     &__desc {
@@ -32,6 +39,11 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
         margin-left: auto;
         z-index: 2;
+
+
+        @media only screen and (max-width: $bp-small) {
+            display: none;
+        }
     }
 }
 
