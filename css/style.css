@@ -32,11 +32,18 @@ body {
 .jobs__content {
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 37.5em) {
+    .jobs__content {
+      flex-direction: column-reverse; } }
 
 .jobs__list {
   width: 40%;
   margin: 0 2rem;
   color: #ccc; }
+  @media only screen and (max-width: 37.5em) {
+    .jobs__list {
+      width: 80%;
+      margin: auto; } }
 
 .jobs__item {
   background-color: #050515;
@@ -58,6 +65,11 @@ body {
   font-size: 2.2rem;
   line-height: 1.2;
   text-align: justify; }
+  @media only screen and (max-width: 37.5em) {
+    .jobs__desc {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 2rem; } }
 
 .cars {
   margin: 2rem;
